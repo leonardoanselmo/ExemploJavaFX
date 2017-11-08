@@ -50,7 +50,7 @@ public class Main extends Application {
 
     public static interface onChangeScreen{
 
-        
+         
 
     }
 }
