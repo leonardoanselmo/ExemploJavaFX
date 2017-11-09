@@ -8,8 +8,19 @@ import javafx.fxml.FXML;
 public class DetailsController {
 
     @FXML
+    protected void initialize(){
+        Main.addOnChangeScreenListeners(new Main.onChangeScreen() {
+            @Override
+            public void onScreenChanged(String newScreen, Object userData) {
+                if (newScreen.equals("details")) {
+                    System.out.println("nova tela: " + newScreen + ", " + userData);
+                }
+            }
+        });
+    }
+
+    @FXML
     protected void btCancelarAction(ActionEvent e){
-        System.out.println("bt cancelar");
         Main.changeScreen("main");
     }
 
