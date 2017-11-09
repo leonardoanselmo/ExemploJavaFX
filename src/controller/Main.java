@@ -6,7 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import model.Veiculo;
-import model.sqlite.VeiculoSQLite;
+import model.sqlite.VeiculoSQLiteDAO;
 
 import java.util.ArrayList;
 
@@ -19,16 +19,6 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-
-        Veiculo veiculo = new Veiculo("chevrolet", "corsa", 80);
-
-        VeiculoSQLite database = new VeiculoSQLite();
-
-        database.create(veiculo);
-
-        System.out.println(database.all());
-
-        System.exit(0);
 
         stage = primaryStage;
 
