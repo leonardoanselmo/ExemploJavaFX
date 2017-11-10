@@ -1,2 +1,5 @@
 /.idea/
-/out/
+out/*
+.DS_Store
+libs/*
+my_database
