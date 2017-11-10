@@ -59,7 +59,7 @@ public class Veiculo {
     }
 
 
-    // ------------------- DAO
+    // ------------------- ActiveRecord
 
     private static VeiculoSQLiteDAO dao = new VeiculoSQLiteDAO();
 
